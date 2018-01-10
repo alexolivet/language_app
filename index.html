@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>¡Te doy la palabra!</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">¡Te doy la palabra!</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-up">
+                <li><a href="#"><i class="material-icons">autorenew</i></a></li>
+                <li><a href="#"><i class="material-icons">email</i></a></li>
+                <li><a href="#"><i class="material-icons">refresh</i></a></li>
+                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="appSteps">
+                <div id="q0">
+                    <div class="section no-pad-bot" id="index-banner">
+                        <div class="container">
+                            <div class="row center">
+                                <h1 class="header col s12 light">¡Te doy la palabra!</h1>
+                                <p>Aprende inglés desde tu móvil con esta simple y efectiva aplicacion de listening (escuchar) y leer en inglés.</p>
+                                <p> Sea cual sea tu nivel, en ¡Te doy la palabra! encontrarás una manera sencilla de seguir practicando tu inglés para ampliar tus conocimientos del idioma.</p>
+                                <p>Puedes divertirte y aprender al mismo tiempo! Es completamente gratis! Además de smartphones, ¡Te doy la palabra!, funciona en computadoras y tabletas</p>
+                            </div>
+                            <div class="row center">
+                                <a href="#" class="btn-large waves-effect waves-light orange next">¿Te animas?</a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div id="q1">
+                    <div class="section no-pad-bot" id="index-banner">
+                        <div class="container">
+                            <div class="row center">
+                                <h1 class="header col s12 light">¿Cómo funciona? </h1>
+                                <p>Bueno, Primero, solicitas una palabra aleatoria desde la aplicación </p>
+                                <p> Sea cual sea tu nivel, en ¡te tomo la palabra! encontrarás una manera sencilla de seguir practicando tu inglés. </p>
+                                <p>Puedes divertirte y aprender al mismo tiempo! Es completamente gratis! Además de smartphones, ¡te tomo la palabra!, funciona en computadoras y tabletas</p>
+                            </div>
+                            <div class="row center">
+                                <a href="#" class="btn-large waves-effect waves-light orange next">¿Te animas?</a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div id="q2">
+                    <div class="section no-pad-bot" id="index-banner">
+                        <div class="container">
+                            <h1 class="header center orange-text">¡Te doy la palabra!</h1>
+                            <div class="row center">
+                                <div id="app">
+                                    <h5 class="header col s12 light">Get a random word
+                            </h5>
+                                    <a class="btn-floating waves-effect waves-light red" id="startAjax"><i class="material-icons">add</i></a>
+                                    <h5 class="header col s12 light" id="wordDump"></h5>
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <a href="#" id="getDefinition" class="btn-large waves-effect waves-light orange next">Get the word definition</a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div id="q3">
+                    <div class="section no-pad-bot" id="index-banner">
+                        <div class="container">
+                            <h1 class="header center orange-text">¡Te doy la palabra!</h1>
+                            <div class="row center">
+                                <div id="app">
+                                    <h5 class="header col s12 light">Word definition</h5>
+                                    <h5 class="header col s12 light" id="wordDefinition"></h5>
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <a href="#" id="getPicture" class="btn-large waves-effect waves-light orange next">Get the picture</a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div id="q4">
+                    <div class="section no-pad-bot" id="index-banner">
+                        <div class="container">
+                            <h1 class="header center orange-text">¡Te doy la palabra!</h1>
+                            <div class="row center">
+                                <div id="app">
+                                    <h5 class="header col s12 light">picture</h5>
+                                    <figure id="result">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <a href="#" class="btn-large waves-effect waves-light orange next">Start again</a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">¡Te doy la palabra!</h5>
+                    <p class="grey-text text-lighten-4">Get a random word. Get the definition. Get a random image. Get the pronunciation.</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Another app by <a class="orange-text text-lighten-3" href="http://elwebman.io">elwebman</a>
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+</body>
+
+</html>
