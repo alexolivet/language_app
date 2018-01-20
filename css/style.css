@@ -50,7 +50,7 @@ blockquote,
 .btna {
     cursor: pointer;
     display: inline-block;
-    padding: 30px;
+    padding: 29px;
     background: #94a657;
     border-radius: 4px;
     color: #fff;
@@ -70,6 +70,8 @@ blockquote {
     padding: 0.5em 3em 0.5em 3em;
     clear: both;
 }
+
+
 
 
 

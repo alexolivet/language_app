@@ -54,7 +54,7 @@ if( empty($errors))
 	header('Location: http://api.elwebman.io/new/contact-form-thank-you.html');
 } 
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Contact form handler</title>
