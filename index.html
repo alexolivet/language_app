@@ -3,48 +3,71 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no" />
     <title>¡Te doy la palabra!</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- nprogress -->
+    <link rel='stylesheet' href='css/nprogress.css' />
+    <!-- reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- a helper script for vaidating the form-->
+    <script src="js/email_validator.js"></script>
 </head>
 
 <body>
-    <nav class="light-blue lighten-1" role="navigation">
+    <noscript>
+        <h1>Se requiere Javascript</h1>
+        <p>No se puede usar esta pagina sin Javascript</p>
+        <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+        <p>Aquí están las
+            <a href="https://www.enable-javascript.com/" target="_blank"></a> instrucciones sobre cómo habilitar JavaScript en su navegador web</p>
+        <p></p>
+        <p>This page is trying to run JavaScript and your browser either does not support JavaScript or you may have turned-off JavaScript. If you have disabled JavaScript on your computer, please turn on JavaScript. Thank you</p>
+        <p>Here are the <a href="https://www.enable-javascript.com/" target="_blank"></a> instructions how to enable JavaScript in your web browser</p>
+    </noscript>
+    <!-- start nav -->
+    <nav class="blue darken-2" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">¡Te doy la palabra!</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
+                <li><a href="#" class="home">Principio</a></li>
+                <li><a href="#" class="howTo">¿Cómo funciona?</a></li>
+                <li><a href="#" class="GoToApp">Aprende Ingles!</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-up">
-                <li><a href="#"><i class="material-icons">autorenew</i></a></li>
-                <li><a href="#"><i class="material-icons">email</i></a></li>
-                <li><a href="#"><i class="material-icons">refresh</i></a></li>
-                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            <ul id="navbar" class="right">
+                <li id="autorenew" class="startAjax"><a href="#"><i class="material-icons">autorenew</i></a></li>
+                <li><a id="mailFormReady" href="#"><i class="material-icons">email</i></a></li>
+                <li><a href="#"><i class="restartApp material-icons">refresh</i></a></li>
+                <!-- <li><a href="#"><i class="material-icons">more_vert</i></a></li> -->
             </ul>
         </div>
     </nav>
+    <!-- end nav -->
     <main>
         <div class="container">
+            <!-- start appSteps -->
             <div id="appSteps">
+                <!-- start q0 -->
                 <div id="q0">
-                    <div class="section no-pad-bot" id="index-banner">
+                    <div class="section no-pad-bot">
                         <div class="container">
                             <div class="row center">
-                                <h1 class="header col s12 light">¡Te doy la palabra!</h1>
+                                <h1 class="header col s12 text-title">¡Te doy la palabra!</h1>
                                 <p>Aprende inglés desde tu móvil con esta simple y efectiva aplicacion de listening (escuchar) y leer en inglés.</p>
-                                <p> Sea cual sea tu nivel, en ¡Te doy la palabra! encontrarás una manera sencilla de seguir practicando tu inglés para ampliar tus conocimientos del idioma.</p>
+                                <p> <span class="text-title">Sea cual sea tu nivel</span>, en ¡Te doy la palabra! encontrarás una manera sencilla de seguir practicando tu inglés para ampliar tus conocimientos del idioma.</p>
                                 <p>Puedes divertirte y aprender al mismo tiempo! Es completamente gratis! Además de smartphones, ¡Te doy la palabra!, funciona en computadoras y tabletas</p>
+                                <p>La pronunciación en inglés es uno de los puntos más complicados para alcanzar el nivel de inglés de un verdadero nativo, y para los hispano hablantes más aún, acostumbrados a una pronunciación literal, los cambios de pronunciación del inglés nos confunden y consiguen que más de uno se frustre con el idioma anglosajón.</p>
+                                <p>Aprende inglés en cualquier lugar y situación con un curso de inglés en audio especialmente diseñado para iPhone, iPad, iPod y que te permitirá aprender de forma práctica, amena y sencilla en cualquier momento aprovechando al máximo tu tiempo.</p>
                             </div>
                             <div class="row center">
-                                <a href="#" class="btn-large waves-effect waves-light orange next">¿Te animas?</a>
+                                <a href="#" class="btn-large waves-effect waves-light light-green black-text next">¿Te animas?</a>
                             </div>
                             <br>
                             <br>
@@ -53,17 +76,57 @@
                         <br>
                     </div>
                 </div>
+                <!-- end q0 -->
+                <!-- start q1 -->
                 <div id="q1">
-                    <div class="section no-pad-bot" id="index-banner">
+                    <div class="section no-pad-bot">
                         <div class="container">
                             <div class="row center">
-                                <h1 class="header col s12 light">¿Cómo funciona? </h1>
-                                <p>Bueno, Primero, solicitas una palabra aleatoria desde la aplicación </p>
-                                <p> Sea cual sea tu nivel, en ¡te tomo la palabra! encontrarás una manera sencilla de seguir practicando tu inglés. </p>
-                                <p>Puedes divertirte y aprender al mismo tiempo! Es completamente gratis! Además de smartphones, ¡te tomo la palabra!, funciona en computadoras y tabletas</p>
+                                <h1 class="header col s12 text-title">¿Cómo funciona?</h1>
+                                <p>¡Te doy la palabra! es una aplicación muy fácil de usar. Sin embargo, el hecho de que sea muy intuitiva y moderna, sobre todo usando símbolos en todas partes, hace que a veces se convierta en un jeroglífico. Descifrarlo no tiene ningún secreto y, para hacértelo fácil, vamos a detallarte qué significa cada uno de los iconos de ¡Te doy la palabra!.</p>
+                                <h3>¿Qué significa cada símbolo?</h3>
+                                <ul class="collection">
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle red">autorenew</i>
+                                        <span class="title">Bueno, Primero, solicitas una palabra aleatoria desde la aplicación.</span>
+                                        <p>Una búsqueda con éxito retorna lo siguente:</p>
+                                        <ul>
+                                            <li class="collection">Una palabra aleatoria, su definición de diccionario (en Ingles) una fotografía y la pronunciacion de la palabra.</li>
+                                            <li class="collection">Ademas de esto podras escuchar el audio repetidas veces si lo necesitas.</li>
+                                        </ul>
+                                        <br>
+                                        <br>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="fas fa-volume-up circle"></i>
+                                        <span class="title">Ficheros de audio</span>
+                                        <ul>
+                                            <li class="collection">La aplicacion ofrece un fichero de audio por palabra aleatoria que puedes escuchar en tu dispositivo (iPhone, iPad, Android...), en cualquier momento o lugar. Están desarrollados para que puedas aprender y mejorar tu inglés simplemente escuchando.</li>
+                                            <li class="collection">Haz click sobre el altavoz o "speaker". Si tienes problemas para escuchar consulta nuestras preguntas más frecuentes)</li>
+                                            <li class="collection"><i class="fas fa-headphones"></i> Es recomendable de utilizar auriculares para escuchar las palabras.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle red">email</i>
+                                        <span class="title">Comunicación</span>
+                                        <ul>
+                                            <li class="collection">Aprender el ingles es importante para ¡Te doy la palabra! Por eso ofrecemos un servicio gratuito que te permite recibir por email tu palabra aleatoria con su definicion.</li>
+                                            <li class="collection">Podemos guardar su elección directamente a su correo electrónico.</li>
+                                            <li class="collection">No guardamos ningún registro de direcciones IP que pueda vincularse a su cuenta de correo electrónico anónima. Su privacidad es lo primero.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle red">refresh</i>
+                                        <span class="title">Resetear la buqueda</span>
+                                        <ul>
+                                            <li class="collection">Es un borrón y cuenta nueva, literalmente.</li>
+                                            <li class="collection">Puedes empezar de nuevo cuando quieres.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="row center">
-                                <a href="#" class="btn-large waves-effect waves-light orange next">¿Te animas?</a>
+                                <a href="#" class="btn-large waves-effect waves-light light-green black-text next">¿Te animas?</a>
                             </div>
                             <br>
                             <br>
@@ -72,89 +135,193 @@
                         <br>
                     </div>
                 </div>
-                <div id="q2">
-                    <div class="section no-pad-bot" id="index-banner">
-                        <div class="container">
-                            <h1 class="header center orange-text">¡Te doy la palabra!</h1>
-                            <div class="row center">
-                                <div id="app">
-                                    <h5 class="header col s12 light">Get a random word
-                            </h5>
-                                    <a class="btn-floating waves-effect waves-light red" id="startAjax"><i class="material-icons">add</i></a>
-                                    <h5 class="header col s12 light" id="wordDump"></h5>
+                <!-- end q1 -->
+                <!-- start q2 -->
+                <div id="q2" class="card">
+                    <h2 class="center orange-text card-title">¡Te doy la palabra!</h2>
+                    <div class="container">
+                        <div class="row center">
+                            <div class="col s12">
+                                <div class="card medium blue lighten-4 app">
+                                    <h5 class="header col s12">Palabra aleatoria</h5>
+                                    <br>
+                                    <br>
+                                    <a class="btn-floating waves-effect waves-light red startAjax">
+                                            <i class="material-icons">autorenew</i>
+                                        </a>
+                                    <br>
+                                    <div class="section">
+                                        <blockquote class="flow-text errorMessage" id="wordDump"></blockquote>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="card-action">
+                                        <a href="#" id="getDefinition" class="btn-large waves-effect waves-light light-green black-text next flow-text">Definicion <i class="fas fa-chevron-circle-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row center">
-                                <a href="#" id="getDefinition" class="btn-large waves-effect waves-light orange next">Get the word definition</a>
-                            </div>
-                            <br>
-                            <br>
                         </div>
-                        <br>
-                        <br>
                     </div>
                 </div>
-                <div id="q3">
-                    <div class="section no-pad-bot" id="index-banner">
-                        <div class="container">
-                            <h1 class="header center orange-text">¡Te doy la palabra!</h1>
-                            <div class="row center">
-                                <div id="app">
-                                    <h5 class="header col s12 light">Word definition</h5>
-                                    <h5 class="header col s12 light" id="wordDefinition"></h5>
+                <!-- end 2 -->
+                <!-- start q3 -->
+                <div id="q3" class="card">
+                    <h2 class="center orange-text card-title">¡Te doy la palabra!</h2>
+                    <div class="container">
+                        <div class="row center ">
+                            <div class="col s12">
+                                <div class=" card blue lighten-4 app">
+                                    <h5 class="header col s12">Definicion</h5>
+                                    <br>
+                                    <br>
+                                    <div class="section">
+                                        <blockquote id="wordDefinition" class="errorMessage flow-text">
+                                        </blockquote>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="card-action">
+                                        <a href="#" class="btn waves-effect waves-light light-green black-text prev flow-text"><i class="fas fa-chevron-circle-left"></i>
+                                        </a>
+                                        <a href="#" id="getPicture" class="btn-large waves-effect waves-light light-green black-text next flow-text">Imagen 
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row center">
-                                <a href="#" id="getPicture" class="btn-large waves-effect waves-light orange next">Get the picture</a>
-                            </div>
-                            <br>
-                            <br>
                         </div>
-                        <br>
-                        <br>
                     </div>
                 </div>
-                <div id="q4">
-                    <div class="section no-pad-bot" id="index-banner">
-                        <div class="container">
-                            <h1 class="header center orange-text">¡Te doy la palabra!</h1>
-                            <div class="row center">
-                                <div id="app">
-                                    <h5 class="header col s12 light">picture</h5>
-                                    <figure id="result">
-                                    </figure>
+                <!-- end q3 -->
+                <!-- start q4 -->
+                <div id="q4" class="card">
+                    <h2 class="center orange-text card-title">¡Te doy la palabra!</h2>
+                    <div class="container">
+                        <div class="row center">
+                            <div class="col s12">
+                                <div class="card blue lighten-4 app">
+                                    <h5 class="header col s12">Imagen</h5>
+                                    <div class="card-image">
+                                        <figure id="result">
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" class="btn waves-effect waves-light light-green black-text prev flow-text"><i class="fas fa-chevron-circle-left"></i>
+                                        </a>
+                                        <a href="#" id="getAudio" class="btn-large waves-effect waves-light light-green black-text next flow-text">Escuchar <i class="fas fa-chevron-circle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row center">
-                                <a href="#" class="btn-large waves-effect waves-light orange next">Start again</a>
-                            </div>
-                            <br>
-                            <br>
                         </div>
-                        <br>
-                        <br>
                     </div>
                 </div>
+                <!-- end q4 -->
+                <!-- start q5 -->
+                <div id="q5" class="card">
+                    <h2 class="center orange-text card-title">¡Te doy la palabra!</h2>
+                    <div class="container">
+                        <div class="row center">
+                            <div class="col s12">
+                                <div class="card medium blue lighten-4 app">
+                                    <h5 class="header col s12">Audio</h5>
+                                    <p class="header col s12" id="audioDiv"></p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <audio id="audioPlayer" preload="metadata">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <a class="btna" id="nyan-btn">play / pause</a>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="card-action">
+                                        <a href="#" class="btn waves-effect waves-light light-green black-text prev flow-text"><i class="fas fa-chevron-circle-left"></i>
+                                        </a>
+                                        <a href="#" id="getMail" class="btn-large waves-effect waves-light light-green black-text next flow-text">Email <i class="fas fa-chevron-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end q5 -->
+                <!-- start q6 -->
+                <div id="q6" class="card">
+                    <h3 class="col s12 center-align">Mail</h3>
+                    <div class="container" id="contactform">
+                        <div class="row center blue lighten-4 app">
+                            <div class="col s12">
+                                <div class="card">
+                                    <form method="POST" name="contactform" action="js/contact-form-handler.php" id="form">
+                                        <p class="input-field">
+                                            <label id='name'>Naam :</label>
+                                            <br>
+                                            <input type="text" name="name">
+                                        </p>
+                                        <p class="input-field validate">
+                                            <label id='email'>E-Mailadres :</label>
+                                            <br>
+                                            <input type="text" name="email">
+                                            <br>
+                                        </p>
+                                        <p class="input-field">
+                                            <label id='word'>Ramdom Word :</label>
+                                            <br>
+                                            <textarea class="materialize-textarea flow-text" id="randomWordEmail" readonly="readonly" name="randomWordEmail"></textarea>
+                                            <br>
+                                        </p>
+                                        <p class="input-field">
+                                            <label id='words'>Definition :</label>
+                                            <br>
+                                            <textarea class="materialize-textarea flow-text" readonly="readonly" id="randomWordEmailDefinition" name="randomWordEmailDefinition"></textarea>
+                                        </p>
+                                        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcNazwUAAAAADO0bLwQK9IaAL3fB_X7hGVP3mQm" data-size="compact" name="g-recaptcha"></div>
+                                        <input class="btn waves-effect waves-light flow-text" type="submit" value="Enviar">
+                                    </form>
+                                    <!-- start email validator -->
+                                    <script>
+                                    var frmvalidator = new Validator("contactform");
+                                    frmvalidator.addValidation("name", "req", "Please provide your name");
+                                    frmvalidator.addValidation("email", "req", "Please provide your email");
+                                    frmvalidator.addValidation("randomWordEmail", "req", "Missing data. Please try again later");
+                                    frmvalidator.addValidation("randomWordEmailDefinition", "req", "Missing data. Please try again later");
+                                    frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+                                    </script>
+                                    <!-- end email validator -->
+                                    <div class="row center">
+                                        <a href="#" class="restartApp btn waves-effect waves-light light-green black-text flow-text">Reiniciar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end q6 -->
             </div>
+            <!-- end appSteps -->
         </div>
     </main>
-    <footer class="page-footer orange">
+    <footer class="page-footer blue" id="hideFooter">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">¡Te doy la palabra!</h5>
+                    <h3 class="white-text">¡Te doy la palabra!</h3>
                     <p class="grey-text text-lighten-4">Get a random word. Get the definition. Get a random image. Get the pronunciation.</p>
                 </div>
                 <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                    </ul>
                 </div>
                 <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a href="#" class="home white-text">Principio</a></li>
+                        <li><a href="#" class="howTo white-text">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
             </div>
@@ -169,7 +336,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script type="text/javascript" src="js/ajax.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src='js/nprogress.js'></script>
 </body>
 
 </html>

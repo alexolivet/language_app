@@ -16,28 +16,92 @@
     font-size: inherit;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-main {
-    flex: 1 0 auto;
-}
-
 #q1,
 #q2,
 #q3,
-#q4 {
+#q4,
+#q5,
+#q6,
+#autorenew,
+.mailFormReady,
+blockquote,
+.restartApp {
     display: none;
-}
-
-#app {
-    width: 100%;
-    display: inline-block;
 }
 
 #caption {
     text-align: center;
+}
+
+.fas {
+    height: 46px;
+    vertical-align: top;
+}
+
+.g-recaptcha {
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+}
+
+.text-title {
+    background-color: rgb(256, 256, 0);
+}
+
+.btna {
+    cursor: pointer;
+    display: inline-block;
+    padding: 30px;
+    background: #94a657;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 20px;
+    -moz-transition: box-shadow 0.25s ease;
+    -o-transition: box-shadow 0.25s ease;
+    -webkit-transition: box-shadow 0.25s ease;
+    transition: box-shadow 0.25s ease;
+}
+
+blockquote {
+    border-left: none;
+    position: relative;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em 3em 0.5em 3em;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+
+blockquote:before {
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+
+blockquote:after {
+    position: absolute;
+    /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float: right;
+    font-size: 6em;
+    line-height: 1;
+    right: 0;
+    bottom: -0.5em;
+    content: "\201D";
 }
